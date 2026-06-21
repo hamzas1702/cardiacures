@@ -907,16 +907,16 @@ mix-blend-mode: multiply;
 
 .midd__card-number {
   font-family: var(--font-serif);
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 36px;
+  font-weight: 700;
   color: var(--black);
   text-align: left;
 }
 
 .midd__card-subtitle {
   font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
   color: var(--black);
  text-align: right;
 }
@@ -938,7 +938,7 @@ mix-blend-mode: multiply;
 .midd__card-label {
   font-family: var(--font-serif);
   font-weight: 700;
-  font-size: 28px;
+  font-size: 30px;
   line-height: 1em;
   text-align: center;
   letter-spacing: -0.04em;
@@ -956,68 +956,163 @@ mix-blend-mode: multiply;
   overflow-x: auto;
 }
 
-.pipeline-table__table {
-  width: 100%;
-  border-collapse: collapse;
-  font-family: var(--font-sans);
-  font-size: 14px;
+.pipeline-table__grid {
+  min-width: 900px;
 }
 
-.pipeline-table__table th {
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 12px 10px;
-  border-bottom: 1px solid var(--black);
-  vertical-align: bottom;
+.pipeline-table__row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  align-items: center;
 }
 
-.pipeline-table__table td {
-  padding: 12px 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: center;
-  font-size: 13px;
-}
-
-.pipeline-table__section-header td {
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: 13px;
-  text-transform: uppercase;
-  text-align: left;
-  padding-top: 20px;
+.pipeline-table__row--header {
+  align-items: end;
+  padding-bottom: 16px;
+  margin-bottom: 16px;
   border-bottom: 1px solid var(--black);
 }
 
-.pipeline-table__drug {
+.pipeline-table__stage-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+}
+
+.pipeline-table__stage-head {
   font-family: var(--font-sans);
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  text-align: left !important;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3em;
+  color: var(--black);
+  position: relative;
+}
+
+.pipeline-table__stage-head:not(:last-child)::after {
+  content: "\276F";
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translate(50%, -50%);
+  font-size: 20px;
+  color: var(--black);
+}
+
+.pipeline-table__chevron {
+  display: none;
+}
+
+.pipeline-table__group {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: stretch;
+}
+
+.pipeline-table__group-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pipeline-table__group-rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.pipeline-table__row {
+  border-bottom: 1px solid #000;
+  padding: 22px 0;
+}
+
+.pipeline-table__col-label {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--black);
+  padding-left: 24px;
+  position: relative;
+}
+
+
+.pipeline-table__track {
+  position: relative;
+  height: 48px;
+}
+
+.pipeline-table__divider {
+  position: absolute;
+  top: -22px;
+  bottom: -22px;
+  width: 1px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #a3a3a3 0,
+    #a3a3a3 4px,
+    transparent 4px,
+    transparent 14px
+  );
 }
 
 .pipeline-table__bar {
-  height: 28px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 44px;
+  background: var(--black);
   border-radius: 90px;
-  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 22px;
 }
 
-.pipeline-table__bar--full {
-  background: #c1e899;
-  width: 100%;
+.pipeline-table__bar--cc1,
+.pipeline-table__bar--cc2 {
+  width: 60%;
 }
 
-.pipeline-table__bar--partial {
-  background: #c1e899;
-  width: 67%;
+.pipeline-table__bar--cc3 {
+  width: 40%;
+}
+
+.pipeline-table__bar-logo {
+  height: 26px;
+  width: auto;
+  filter: brightness(0) invert(1);
 }
 
 .pipeline-table__planned {
-  font-size: 12px;
-  color: var(--gray);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--black);
+  white-space: nowrap;
 }
 
+.pipeline-table__note {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  line-height: 1.4em;
+  color: var(--black);
+  white-space: normal;
+  width: 18%;
+}
 /* Product Cards */
 .product-cards {
   padding: 0 69px 80px;
@@ -1050,14 +1145,14 @@ mix-blend-mode: multiply;
 
 .product-cards__number {
   font-family: var(--font-serif);
-  font-size: 20px;
+  font-size: 40px;
   color: var(--white);
 }
 
 .product-cards__title {
   font-family: var(--font-serif);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.1em;
   letter-spacing: -0.03em;
   color: var(--white);
