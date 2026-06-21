@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      CardiaCures - Reinventing Personalized Medicine for Heart Disease
+    </title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="#" class="nav__logo">
+        <img
+          src="./images/cardiacures-logo.svg"
+          alt="CardiaCures"
+          class="nav__logo-img"
+        />
+      </a>
+      <ul class="nav__links">
+        <li><a href="./index.html" class="nav__link--active">Home</a></li>
+        <li><a href="./pipeline.html">Pipeline</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-icon"></span>
+      </button>
+    </nav>
+    <!-- Mobile menu overlay -->
+    <div class="nav-mobile">
+      <ul class="nav-mobile__links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pipeline.html">Pipeline</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+      <img src="./images/hero-bg.png" alt="" class="hero__bg" />
+      <div class="hero__overlay"></div>
+      <div class="hero__content" data-aos="fade-up">
+        <div class="hero__tagline">
+          <h1 class="hero__title">Your Heart. Your Data. Your Cure.</h1>
+        </div>
+        <div class="hero__bottom">
+          <p class="hero__description">
+            Reinventing Personalized Medicine for Heart Disease
+          </p>
+          <a href="#unmet-need" class="btn">
+            <span class="btn__bullet"></span>
+            Learn More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Unmet Medical Need + Lifetime Risk -->
+    <section class="section" id="unmet-need" data-aos="fade-up">
+      <p class="section__label">Unmet Medical Need</p>
+      <h2 class="section__heading">
+        Lifetime risk of atrial fibrillation is 1 in 3 over age 45 and its
+        prevalence continues to increase globally
+      </h2>
+    </section>
+
+    <!-- AF Stats Section -->
+    <section class="af-stats" data-aos="fade-up">
+      <img
+        src="./images/af-risks-3f151a.png"
+        alt=""
+        class="af-stats__bg-img af-stats__bg-img--right"
+      />
+      <div class="af-stats__card">
+        <img
+          src="./images/af-prevalence-6f3a6f.png"
+          alt=""
+          class="af-stats__bg-img af-stats__bg-img--left"
+        />
+
+        <div class="af-stats__inner">
+          <div class="af-stats__col">
+            <h3 class="af-stats__heading">Prevalence</h3>
+            <div class="af-stats__stat">
+              <span class="af-stats__number">12M</span>
+              <span class="af-stats__desc">AF Patients in the US</span>
+            </div>
+            <div class="af-stats__stat af-stats__stat--spaced">
+              <span class="af-stats__number">50M</span>
+              <span class="af-stats__desc">AF Patients in the US</span>
+            </div>
+          </div>
+          <div class="af-stats__col">
+            <h3 class="af-stats__heading">Risks</h3>
+            <div class="af-stats__stat">
+              <span class="af-stats__number">5x</span>
+              <span class="af-stats__desc">AF Patients in the US</span>
+            </div>
+            <div class="af-stats__stat af-stats__stat--spaced">
+              <svg
+                class="af-stats__arrow"
+                width="40"
+                height="50"
+                viewBox="0 0 40 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M4 8L36 42M36 42V18M36 42H12"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="af-stats__desc">AF Patients in the US</span>
+            </div>
+          </div>
+          <div class="af-stats__col af-stats__col--icons">
+            <div class="af-stats__icon-block">
+              <svg
+                class="af-stats__icon"
+                width="50"
+                height="60"
+                viewBox="0 0 40 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20 48V2M20 2L4 18M20 2L36 18"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="af-stats__desc"
+                >Higher risk of heart failure<br />& other complications</span
+              >
+            </div>
+            <div class="af-stats__icon-block">
+              <svg
+                class="af-stats__icon"
+                width="50"
+                height="50"
+                viewBox="0 0 50 50"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25 5V45M5 25H45"
+                  stroke="white"
+                  stroke-width="4"
+                  stroke-linecap="round"
+                />
+              </svg>
+              <span class="af-stats__desc"
+                >Leading cause<br />of hospitalizations</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Market Opportunity -->
+    <section class="section" data-aos="fade-up">
+      <h2 class="section__heading">Market Opportunity</h2>
+    </section>
+
+    <!-- Antiarrhythmic Drugs Articles -->
+    <section class="articles" data-aos="fade-up">
+      <div class="articles__inner">
+        <h3 class="articles__heading">Antiarrhythmic Drugs</h3>
+        <div class="articles__grid">
+          <div class="articles__item">
+            <span class="articles__number">01</span>
+            <p class="articles__text">
+              Effective antiarrhythmic drugs for AF exist, but narrow
+              therapeutic window
+            </p>
+          </div>
+          <div class="articles__item">
+            <span class="articles__number">02</span>
+            <p class="articles__text">
+              Patients must be admitted to the hospital for 3 days when starting
+              certain drugs
+            </p>
+          </div>
+          <div class="articles__item">
+            <span class="articles__number">03</span>
+            <p class="articles__text">
+              Many patients and doctors avoid these drugs due to hospitalization
+              burden
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Therapeutic Window -->
+    <section class="image-section" data-aos="fade-up">
+      <img
+        src="./images/therapeutic-window-expanded.png"
+        alt="Therapeutic Window Expanded"
+        class="image-section__img"
+      />
+    </section>
+
+    <!-- Testimonial -->
+    <section class="testimonial" data-aos="fade-up">
+      <div class="testimonial__quote">
+        <img src="./images/quotation.svg" alt="" class="testimonial__icon" />
+        <p class="testimonial__text">
+          The winning product isn't always the strongest molecule. It is the one
+          that reliably reaches the window.
+        </p>
+        <div>
+          <p class="testimonial__name">Founder & CEO</p>
+          <p class="testimonial__bio">
+            David Strauss, MD/PhD<br /><br />14+ years at the FDA<br />9Y FDA
+            Center for Drugs<br />5Y FDA Center for Devices<br />1Y FDA Acting
+            Chief Scientist
+          </p>
+        </div>
+      </div>
+      <div class="testimonial__image">
+        <img
+          src="./images/testimonial-portrait-6fe9cf.png"
+          alt="David Strauss"
+        />
+      </div>
+    </section>
+
+    <!-- OLD WAY section-->
+    <section class="section image-section section--dark-bg" data-aos="fade-up">
+      <h2 class="section__heading section__heading--light">The Old Way</h2>
+      <p class="section__label section__label--light">
+        One Size Fits All Dosing <br />Variability among patients in
+        benefit-risk<br />
+        Larger trials required to demonstrate efficacy
+      </p>
+
+      <img
+        src="./images/therapeutic-window-expanded.png"
+        alt="Therapeutic Window Expanded"
+        class="image-section__img"
+      />
+    </section>
+
+    <!-- Scale Section -->
+    <section class="section" data-aos="fade-up">
+      <h2 class="section__heading">Model-Informed Precision Dosing at Scale</h2>
+      <p class="section__label" style="margin-top: 20px">
+        Scale to All Classes of AF Drugs for Holistic Patient Management at Home
+      </p>
+    </section>
+
+    <!-- Precision Dosing Flow Card -->
+    <section class="dosing-flow" data-aos="fade-up">
+      <div class="dosing-flow__card">
+        <img
+          src="./images/model-precision.png"
+          alt="Model-Informed Precision Dosing Flow Diagram"
+          class="dosing-flow__img"
+        />
+      </div>
+    </section>
+
+    <!-- OUR WAY section-->
+    <section class="section image-section section--dark-bg" data-aos="fade-up">
+      <h2 class="section__heading section__heading--light">Our Way</h2>
+      <p class="section__label section__label--light">
+        Model Informed Precision Dosing<br />
+        Smaller, faster clinical trials to demonstrate<br />efficacy and fewer
+        safety failures
+      </p>
+
+      <img
+        src="./images/therapeutic-window-expanded.png"
+        alt="Therapeutic Window Expanded"
+        class="image-section__img"
+      />
+    </section>
+
+    <!-- Pipeline Section -->
+    <section class="section" id="pipeline" data-aos="fade-up">
+      <h2 class="section__heading">
+        CardiaCures is developing a multi-drug pipeline for atrial fibrillation
+        with a go-to-market in an inherited arrhythmia
+      </h2>
+    </section>
+
+    <!-- Pipeline Diagram -->
+    <section class="pipeline" data-aos="fade-up">
+      <img
+        src="./images/active-cures.png"
+        alt="CardiaCures Pipeline"
+        class="pipeline__img"
+      />
+    </section>
+
+    <!-- Platform Hero -->
+    <section class="platform-hero" id="platform" data-aos="fade-up">
+      <img
+        src="./images/hero-tc-chip-bg.jpg"
+        alt=""
+        class="platform-hero__bg"
+      />
+      <div class="platform-hero__overlay"></div>
+      <div class="platform-hero__content">
+        <h2 class="platform-hero__title">Software-linked drugs</h2>
+        <p class="platform-hero__subtitle">A new category of medicine.</p>
+        <p class="platform-hero__description">
+          Dosing software named in the FDA-approved label - developed,
+          submitted, and reimbursed as a drug. Built with the people who helped
+          write the regulatory science.
+        </p>
+        <a href="#contact" class="btn btn--accent">
+          <span class="btn__bullet"></span>
+          Explore the platform
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="section" data-aos="fade-up">
+      <h2 class="section__heading">
+        Join us in our mission to reinvent personalized medicine for heart
+        disease. Contact us to learn more.
+      </h2>
+      <a href="#contact" class="btn btn--accent">
+        <span class="btn__bullet"></span>
+        Contact Us
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <h2 class="footer__title">CardiaCures™</h2>
+          <div class="footer__contacts">
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Email us</span>
+              <a
+                href="mailto:connecting@cardiacures.com"
+                class="footer__contact-link"
+                >Connecting@CardiaCures.com</a
+              >
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Phone</span>
+              <a href="tel:+12026180937" class="footer__contact-link"
+                >(202) 618-0937</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <img src="./images/heart-outline.svg" alt="" class="footer__heart" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__location">HQ: Washington, DC</span>
+        <a
+          href="https://linkedin.com"
+          class="footer__social"
+          aria-label="LinkedIn"
+        >
+          <img src="./images/social-linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+      <p class="footer__copy">© 2025 CardiaCures, Inc.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav__toggle");
+      const mobileMenu = document.querySelector(".nav-mobile");
+      toggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("is-open");
+        toggle.classList.toggle("is-open", isOpen);
+      });
+      document.querySelectorAll(".nav-mobile__links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("is-open");
+          toggle.classList.remove("is-open");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-out-cubic",
+        once: true,
+        offset: 80,
+      });
+    </script>
+  </body>
+</html>

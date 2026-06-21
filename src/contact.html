@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CardiaCures - Contact</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <a href="./index.html" class="nav__logo">
+        <img src="./images/cardiacures-logo.svg" alt="CardiaCures" class="nav__logo-img" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pipeline.html">Pipeline</a></li>
+        <li><a href="./contact.html" class="nav__link--active">Contact</a></li>
+      </ul>
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span class="nav__toggle-icon"></span>
+      </button>
+    </nav>
+    <div class="nav-mobile">
+      <ul class="nav-mobile__links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pipeline.html">Pipeline</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+      <img src="./images/hero-bg.png" alt="" class="contact-hero__bg" />
+      <div class="contact-hero__overlay"></div>
+      <div class="contact-hero__content" data-aos="fade-up">
+        <h1 class="contact-hero__title">Let's Talk. Partnering.</h1>
+        <p class="contact-hero__subtitle">Investment opportunities</p>
+      </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info" data-aos="fade-up">
+      <div class="contact-info__grid">
+        <div class="contact-info__item">
+          <span class="contact-info__number">01</span>
+          <p class="contact-info__text">Send us a message.</p>
+        </div>
+        <div class="contact-info__item">
+          <span class="contact-info__number">02</span>
+          <a href="mailto:connecting@cardiacures.com" class="contact-info__link">connecting@cardiacures.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__inner">
+        <div class="footer__left">
+          <h2 class="footer__title">CardiaCures™</h2>
+          <div class="footer__contacts">
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Email us</span>
+              <a href="mailto:connecting@cardiacures.com" class="footer__contact-link">Connecting@CardiaCures.com</a>
+            </div>
+            <div class="footer__contact-item">
+              <span class="footer__contact-label">Phone</span>
+              <a href="tel:+12026180937" class="footer__contact-link">(202) 618-0937</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__right">
+          <img src="./images/heart-outline.svg" alt="" class="footer__heart" />
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span class="footer__location">HQ: Washington, DC</span>
+        <a href="https://linkedin.com" class="footer__social" aria-label="LinkedIn">
+          <img src="./images/social-linkedin.svg" alt="LinkedIn" />
+        </a>
+      </div>
+      <p class="footer__copy">© 2025 CardiaCures, Inc.</p>
+    </footer>
+
+    <script>
+      const toggle = document.querySelector(".nav__toggle");
+      const mobileMenu = document.querySelector(".nav-mobile");
+      toggle.addEventListener("click", () => {
+        const isOpen = mobileMenu.classList.toggle("is-open");
+        toggle.classList.toggle("is-open", isOpen);
+      });
+      document.querySelectorAll(".nav-mobile__links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.remove("is-open");
+          toggle.classList.remove("is-open");
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, easing: "ease-out-cubic", once: true, offset: 80 });
+    </script>
+  </body>
+</html>
